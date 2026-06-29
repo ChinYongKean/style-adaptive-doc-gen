@@ -30,7 +30,9 @@ Feed it any company's format → matches it.
 
 ## Architecture
 
-See [`architecture/system-flow.drawio`](./architecture/system-flow.drawio) for the full visual.
+![System Flow](./architecture/system-flow.png)
+
+See [`architecture/system-flow.drawio`](./architecture/system-flow.drawio) for the editable version.
 
 ```
 ORCHESTRATOR (routes and coordinates)
