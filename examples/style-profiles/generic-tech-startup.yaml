@@ -1,0 +1,88 @@
+meta:
+  extracted_from: "Generic Corporate (Startup/Tech Company)"
+  extraction_date: "2026-06-29"
+  confidence: 0.90
+  notes: "Modern tech company style - clean, minimal, dark accents"
+
+brand:
+  primary_color: "#1A1A2E"
+  secondary_color: "#16213E"
+  accent_color: "#0F3460"
+  heading_font: "Inter"
+  body_font: "Inter"
+  logo_position: "top-left"
+  company_info: null
+
+document:
+  cover_page: false
+  version_history: false
+  table_of_contents: true
+  page_margins:
+    top_cm: 2.0
+    bottom_cm: 2.0
+    left_cm: 2.5
+    right_cm: 2.5
+  orientation: "portrait"
+
+headings:
+  h1: {size_pt: 20, bold: true, color: "#1A1A2E"}
+  h2: {size_pt: 16, bold: true, color: "#16213E"}
+  h3: {size_pt: 13, bold: true, color: "#0F3460"}
+  numbering: "none"
+
+body:
+  font_size_pt: 11
+  color: "#333333"
+  alignment: "left"
+  line_spacing: 1.5
+
+tables:
+  header_bg: "#1A1A2E"
+  header_text_color: "#FFFFFF"
+  header_bold: true
+  border: "minimal"
+  alternating_rows: true
+  status_colors:
+    good: "#D4EDDA"
+    warn: "#FFF3CD"
+    bad: "#F8D7DA"
+
+callouts:
+  style: "full-border"
+  info: {border: "#17A2B8", bg: "#E8F8FC"}
+  warning: {border: "#FFC107", bg: "#FFF8E1"}
+  error: {border: "#DC3545", bg: "#FDE8EA"}
+
+prose:
+  voice: "active"
+  formality: "medium"
+  max_sentence_length: 25
+  contractions: true
+  filler_phrases: false
+  emoji_allowed: false
+  audience: "mixed"
+
+structure:
+  sections_numbered: false
+  content_ratio:
+    tables: 25
+    prose: 55
+    bullets: 20
+  has_summary_boxes: false
+  has_appendix: false
+
+diagrams:
+  icon_set: "generic"
+  icon_format: "resourceIcon"
+  icon_size_px: 48
+  flow_direction: "left-right"
+  numbered_flow: false
+  legend: false
+  title_block: true
+  subnet_fills:
+    public: "#E8F5E9"
+    private: "#E3F2FD"
+  edge_style: "curved"
+  callout_boxes: false
+  canvas_width: 1600
+  canvas_height: 1200

@@ -1,0 +1,94 @@
+meta:
+  extracted_from: SampleCorp AWS Infrastructures Usage Monthly Report February 2026
+  extraction_date: '2026-06-29'
+  confidence: 0.9
+  notes: Heavy table usage, KPI summary boxes, per-service breakdown pattern
+brand:
+  primary_color: '#5B2D8E'
+  secondary_color: '#3C78D8'
+  accent_color: '#ED7100'
+  heading_font: Arial
+  body_font: Arial
+  logo_position: bottom-center
+  company_info: Acme Cloud.ai | XXXXXXXXX | Singapore
+document:
+  cover_page: true
+  version_history: false
+  table_of_contents: true
+  page_margins:
+    top_cm: 2.54
+    bottom_cm: 2.54
+    left_cm: 3.0
+    right_cm: 3.0
+  orientation: portrait
+headings:
+  h1:
+    size_pt: 14
+    bold: true
+    color: '#5B2D8E'
+  h2:
+    size_pt: 13
+    bold: true
+    color: '#5B2D8E'
+  h3:
+    size_pt: 11
+    bold: true
+    color: '#5B2D8E'
+  numbering: '1.1'
+body:
+  font_size_pt: 12
+  color: '#1F1F1F'
+  alignment: justified
+  line_spacing: 1.15
+tables:
+  header_bg: '#3C78D8'
+  header_text_color: '#FFFFFF'
+  header_bold: true
+  border: grid
+  alternating_rows: false
+  status_colors:
+    good: '#C6EFCE'
+    warn: '#FFF2CC'
+    bad: '#F4CCCC'
+callouts:
+  style: left-bar
+  info:
+    border: '#4472C4'
+    bg: '#F5F5F5'
+  warning:
+    border: '#E6B800'
+    bg: '#F5F5F5'
+  error:
+    border: '#CC0000'
+    bg: '#F5F5F5'
+prose:
+  voice: active
+  formality: high
+  max_sentence_length: 30
+  contractions: false
+  filler_phrases: false
+  emoji_allowed: false
+  audience: technical
+structure:
+  sections_numbered: true
+  content_ratio:
+    tables: 55
+    prose: 35
+    bullets: 10
+  has_summary_boxes: true
+  has_appendix: false
+diagrams:
+  icon_set: aws-official
+  icon_format: productIcon
+  icon_size_px: 40
+  flow_direction: top-down
+  numbered_flow: false
+  legend: false
+  title_block: true
+  subnet_fills:
+    public: '#E9F3E6'
+    private: '#E6F6F7'
+  edge_style: orthogonal
+  callout_boxes: false
+  canvas_width: 2400
+  canvas_height: 1400
