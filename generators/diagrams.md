@@ -127,13 +127,19 @@ After generating ANY .drawio file, you MUST:
 5. **If image tool fails** (large image): resize first using PIL → /tmp/resized.png, THEN read
 
 ### Arrow Routing Rules (Prevent Overlap)
+
+**Decision logic:**
 ```
-HORIZONTAL flow (left→right): exitX=1;exitY=0.5 → entryX=0;entryY=0.5
-VERTICAL flow (top→down):     exitX=0.5;exitY=1 → entryX=0.5;entryY=0
-MULTIPLE to same target:      Offset entryY (0.3, 0.5, 0.7) to separate
-LOOP-BACK arrows:             Route via right/left side with explicit waypoints
-NEVER let auto-routing decide for cross-component edges
+IF src.center_y == tgt.center_y (±5px):  → STRAIGHT (no edgeStyle)
+IF src.center_x == tgt.center_x (±5px):  → STRAIGHT (no edgeStyle)
+IF both X and Y differ:                   → ZIGZAG (edgeStyle=orthogonalEdgeStyle)
+IF 1-to-many / many-to-1:                → ZIGZAG with offset entryY (0.3, 0.7)
+IF loop-back:                             → Route via side with waypoints
 ```
+
+- Aligned components → straight arrow (180° or 90°)
+- Unaligned components → zigzag is correct (never diagonal)
+- Never use straight for components that differ on both axes
 
 ### Image Reading for Verification
 ```python
